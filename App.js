@@ -1,14 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Router, Route, Switch } from 'react-router-native';
+
+import Home from './src/components/Home.js';
+import Topic from './src/components/Topic.js';
+
+import history from './src/utils/history.js'
 
 export default class App extends React.Component {
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <Router history={history}>
+        <Switch>
+          <Route path="/home" component={Home}/>
+          <Route path="/topic" component={Topic}/>
+        </Switch>
+      </Router>
     );
   }
 }
@@ -20,4 +28,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  insideContainer: {
+    backgroundColor: '#000'
+  },
+  insideText: {
+    color: '#fff'
+  }
 });
