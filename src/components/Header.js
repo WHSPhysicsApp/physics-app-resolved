@@ -41,11 +41,13 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
   navbar: {
-    backgroundColor: '#ffffff',
+    backgroundColor:'white',
     paddingTop: 10,
-    paddingBottom: 20
+    paddingBottom: 8
   },
   titleText: {
-    fontSize: 28
+    fontSize: 28,
+    justifyContent: 'center',
+    alignItems: 'flex-start'
   }
 });
