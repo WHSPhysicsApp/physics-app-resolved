@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <Header title="Home"/>
-        <Text style={styles.basicText}>Hello, I'm a home page.</Text>
+        <Text style={styles.basicText}>Hello, Im a home page.</Text>
         <Link to="/topic">
           <View>
               <Text style={styles.basicText}>Click here for topic</Text>

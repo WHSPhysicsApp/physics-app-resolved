@@ -4,6 +4,7 @@ import { Router, Route, Switch } from 'react-router-native';
 
 import Home from './src/components/Home.js';
 import Topic from './src/components/Topic.js';
+import Drawing from './src/components/Drawing.js';
 
 import history from './src/utils/history.js'
 
@@ -15,6 +16,7 @@ export default class App extends React.Component {
         <Switch>
           <Route path="/home" component={Home}/>
           <Route path="/topic" component={Topic}/>
+          <Route path="/drawing" component={Drawing}/>
         </Switch>
       </Router>
     );
