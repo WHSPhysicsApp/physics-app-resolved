@@ -23,6 +23,7 @@ export default class Topic extends React.Component {
           <Text style = {styles.chooseText}>Free Response</Text>
         </View>
 
+
       </View>
     );
   }
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'flex-start'
+    justifyContent: 'center'
   },
 
   chooseText: {
