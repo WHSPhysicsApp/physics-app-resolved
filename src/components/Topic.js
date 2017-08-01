@@ -12,9 +12,11 @@ export default class Topic extends React.Component {
 
       {// adding the link to this block removes the text for free response
       }
+        <Link to="/question">
           <View style = {styles.textViewMid}>
             <Text style = {styles.chooseText}>Multiple Choice</Text>
           </View>
+        </Link>
 
 
         <View style = {styles.textViewMid}>
