@@ -8,20 +8,21 @@ export default class Topic extends React.Component {
     return (
       <View style={styles.container}>
         <Header title="Topic"/>
-        <Text style = {styles.upperText}>Select mulitple choice or free response to start practicing!</Text>
+        <Text style = {styles.upperText}>Select multiple choice or free response to start practicing!</Text>
 
       {// adding the link to this block removes the text for free response
       }
-        <Link to="/question">
+        <Link to="/multipleChoice">
           <View style = {styles.textViewMid}>
             <Text style = {styles.chooseText}>Multiple Choice</Text>
           </View>
         </Link>
 
-
-        <View style = {styles.textViewMid}>
-          <Text style = {styles.chooseText}>Free Response</Text>
-        </View>
+        <Link to="/freeResponse">
+          <View style = {styles.textViewMid}>
+            <Text style = {styles.chooseText}>Free Response</Text>
+          </View>
+        </Link>
 
 
       </View>
@@ -43,10 +44,9 @@ const styles = StyleSheet.create({
   },
 
   textViewMid: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+    paddingTop: 50,
+    justifyContent: 'center',
+    paddingBottom: 50
   },
 
   chooseText: {
