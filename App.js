@@ -6,6 +6,8 @@ import Home from './src/components/Home.js';
 import Topic from './src/components/Topic.js';
 import multipleChoice from './src/components/multipleChoice.js';
 import freeResponse from './src/components/freeResponse.js';
+import Results from "./src/components/Results.js";
+import Review from "./src/components/Review.js";
 
 import history from './src/utils/history.js'
 
@@ -19,6 +21,8 @@ export default class App extends React.Component {
           <Route path="/topic" component={Topic}/>
           <Route path="/multipleChoice" component={multipleChoice}/>
           <Route path="/freeResponse" component ={freeResponse}/>
+          <Route path="/results" component = {Results}/>
+          <Route path="/review" component = {Review}/>
         </Switch>
       </Router>
     );

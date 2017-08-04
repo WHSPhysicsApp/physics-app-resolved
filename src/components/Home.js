@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
-import { Link } from 'react-router-native'
-import Header from './Header.js'
+import { Link } from 'react-router-native';
+import Header from './Header.js';
 
 export default class Home extends React.Component {
   render() {

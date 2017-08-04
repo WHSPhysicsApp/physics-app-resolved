@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Header from './Header.js';
 import RadioForm, {RadioButton, RadioButtonInput, RadioButtonLabel} from 'react-native-simple-radio-button';
+import { Link } from 'react-router-native';
 
 
 
@@ -43,6 +44,11 @@ export default class multipleChoice extends React.Component {
                 }}
             />
             </View>
+            <Link to= "/results">
+              <View style={styles.component}>
+                <Text style={styles.question}>Next question</Text>
+              </View>
+            </Link>
           <View style={styles.component}>
             <Text style={styles.question}> Canvas goes here (but bigger) </Text>
           </View>
