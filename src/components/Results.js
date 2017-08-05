@@ -14,6 +14,7 @@ export default class Results extends React.Component {
           <Text style={styles.resultsText}>x/y</Text>
         </View>
 
+<View style= {styles.viewHorizontal}>
         <Link to="/review">
           <View style={styles.reviewView}>
             <Text style={styles.otherText}>Review</Text>
@@ -26,6 +27,8 @@ export default class Results extends React.Component {
             <Text style={styles.otherText}>Home</Text>
           </View>
         </Link>
+</View>
+
 
       </View>
 
@@ -45,13 +48,9 @@ const styles = StyleSheet.create({
     paddingBottom: 160
   },
   reviewView: {
-    alignItems: 'flex-start',
-    justifyContent: 'flex-end',
     paddingLeft: 20
   },
   homeView: {
-    alignItems: 'flex-end',
-    justifyContent: 'flex-end',
     paddingRight: 20
   },
   resultsText: {
@@ -59,7 +58,11 @@ const styles = StyleSheet.create({
     color: '#33FF79'
   },
   otherText: {
-    fontSize: 30
+    fontSize: 40
+  },
+  viewHorizontal: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   }
 
 });
