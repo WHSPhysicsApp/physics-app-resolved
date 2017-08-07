@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     paddingBottom: 8
   },
   titleText: {
-    fontSize: 28,
+    fontSize: 40,
     justifyContent: 'center',
     alignItems: 'flex-start'
   }

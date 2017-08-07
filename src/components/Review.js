@@ -47,11 +47,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue',
   },
   canvas: {
-    width: 300,
+    //width: 300,
     height: 300,
     borderColor: '#000',
     borderWidth: 5,
-    paddingLeft: 10
+    alignItems: 'stretch',
+    paddingLeft: 20,
+    paddingRight: 20,
   },
   questionText: {
     fontSize: 15,

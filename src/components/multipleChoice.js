@@ -46,10 +46,10 @@ export default class multipleChoice extends React.Component {
             </View>
             <Link to= "/results">
               <View style={styles.component}>
-                <Text style={styles.question}>Next question</Text>
+                <Text style={styles.nextQuestionText}>Next question</Text>
               </View>
             </Link>
-          <View style={styles.component}>
+          <View style={styles.canvas}>
             <Text style={styles.question}> Canvas goes here (but bigger) </Text>
           </View>
 
@@ -69,15 +69,27 @@ const styles = StyleSheet.create({
   question: {
     fontSize: 20,
     textAlign: 'left',
-    marginTop: 20,
+    marginTop: 5,
     marginBottom: 20,
     marginLeft: 5
   },
 
   component: {
     alignItems: 'flex-start',
-    marginBottom: 50,
-    marginLeft: 15
+    marginBottom: 20,
+    marginLeft: 5,
+  },
+  canvas: {
+    //width: 300,
+    height: 300,
+    borderColor: '#000',
+    borderWidth: 5,
+    alignItems: 'stretch',
+    //paddingLeft: 20,
+    //paddingRight: 20,
+  },
+  nextQuestionText: {
+    fontSize: 30
   }
 
 

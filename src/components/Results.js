@@ -14,20 +14,20 @@ export default class Results extends React.Component {
           <Text style={styles.resultsText}>x/y</Text>
         </View>
 
-<View style= {styles.viewHorizontal}>
-        <Link to="/review">
-          <View style={styles.reviewView}>
-            <Text style={styles.otherText}>Review</Text>
-          </View>
-        </Link>
+        <View style= {styles.viewHorizontal}>
+                <Link to="/review">
+                  <View style={styles.reviewView}>
+                    <Text style={styles.otherText}>Review</Text>
+                  </View>
+                </Link>
 
 
-        <Link to="/home">
-          <View style={styles.homeView}>
-            <Text style={styles.otherText}>Home</Text>
-          </View>
-        </Link>
-</View>
+                <Link to="/home">
+                  <View style={styles.homeView}>
+                    <Text style={styles.otherText}>Home</Text>
+                  </View>
+                </Link>
+        </View>
 
 
       </View>
@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 100,
-    paddingBottom: 160
+    paddingBottom: 160,
+    backgroundColor: 'blue'
   },
   reviewView: {
     paddingLeft: 20

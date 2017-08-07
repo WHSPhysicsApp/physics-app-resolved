@@ -12,7 +12,7 @@ export default class Home extends React.Component {
         style={styles.image}
         source={{uri: 'http://www.planetholloway.com/graphics/photos/planet-image.jpeg'}}
         />
-        <Text style={styles.basicText}>Welcome to Physics App!</Text>
+        <Text style={styles.basicText}>Welcome to Physics App Name!</Text>
         <Text style={styles.basicText}>Click on a topic to get started!</Text>
           <Link to="/topic">
             <View style = {styles.topicContainer}>
@@ -36,15 +36,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: "#33FFC0"
+    //backgroundColor: "#33FFC0"
   },
   basicText: {
-    fontSize: 20,
-    paddingBottom: 5,
+    fontSize: 30,
+    paddingBottom: 10,
     paddingTop: 10
   },
   topicText: {
-    fontSize: 20,
+    fontSize: 25,
     paddingBottom: 10
   },
   image: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     height: 120
   },
   topicContainer: {
-    paddingTop: 10,
+    paddingTop: 20,
     alignItems: 'flex-start'
   }
 });
