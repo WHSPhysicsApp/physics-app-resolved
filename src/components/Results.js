@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: 100,
     paddingBottom: 160,
-    backgroundColor: 'blue'
+    //backgroundColor: 'blue'
   },
   reviewView: {
     paddingLeft: 20

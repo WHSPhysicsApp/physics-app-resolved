@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { Link } from 'react-router-native';
 import Header from './Header.js';
 
 export default class Home extends React.Component {
   render() {
     return (
+      <ScrollView style={styles.scroll}>
       <View style={styles.container}>
         <Header title="Home"/>
         <Image
@@ -27,13 +28,16 @@ export default class Home extends React.Component {
             </View>
           </Link>
       </View>
+    </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  scroll: {
+    flex: 1
+  },
   container: {
-    flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
     //backgroundColor: "#33FFC0"
