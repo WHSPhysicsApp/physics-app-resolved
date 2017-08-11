@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'rea
 import { Link } from 'react-router-native';
 import Header from './Header.js';
 
+// var questionCtrl = require('../controllers/QuestionCtrl.js');
+
 export default class Home extends React.Component {
   render() {
     return (
