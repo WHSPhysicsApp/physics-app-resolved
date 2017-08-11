@@ -4,8 +4,8 @@ import { Router, Route, Switch } from 'react-router-native';
 
 import Home from './src/components/Home.js';
 import Topic from './src/components/Topic.js';
-import multipleChoice from './src/components/multipleChoice.js';
-import freeResponse from './src/components/freeResponse.js';
+import MultipleChoice from './src/components/multipleChoice.js';
+import FreeResponse from './src/components/freeResponse.js';
 import Results from "./src/components/Results.js";
 import Review from "./src/components/Review.js";
 
@@ -19,8 +19,8 @@ export default class App extends React.Component {
         <Switch>
           <Route path="/home" component={Home}/>
           <Route path="/topic" component={Topic}/>
-          <Route path="/multipleChoice" component={multipleChoice}/>
-          <Route path="/freeResponse" component ={freeResponse}/>
+          <Route path="/multipleChoice" component={MultipleChoice}/>
+          <Route path="/freeResponse" component ={FreeResponse}/>
           <Route path="/results" component = {Results}/>
           <Route path="/review" component = {Review}/>
         </Switch>
