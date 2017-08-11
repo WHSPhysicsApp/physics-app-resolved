@@ -8,7 +8,7 @@ import { Link } from 'react-router-native';
 
 
 
-export default class multipleChoice extends React.Component {
+export default class MultipleChoice extends React.Component {
 
   constructor () {
     super()

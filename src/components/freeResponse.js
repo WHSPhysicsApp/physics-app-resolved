@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native';
 import Header from './Header.js';
 import { Link } from 'react-router-native';
 
-export default class freeResponse extends React.Component {
+export default class FreeResponse extends React.Component {
 
   constructor(props){
     super(props);
