@@ -4,8 +4,8 @@ import { Router, Route, Switch } from 'react-router-native';
 
 import Home from './src/components/Home.js';
 import Topic from './src/components/Topic.js';
-import MultipleChoice from './src/components/multipleChoice.js';
-import FreeResponse from './src/components/freeResponse.js';
+import MultipleChoice from './src/components/MultipleChoice.js';
+import FreeResponse from './src/components/FreeResponse.js';
 import Results from "./src/components/Results.js";
 import Review from "./src/components/Review.js";
 
