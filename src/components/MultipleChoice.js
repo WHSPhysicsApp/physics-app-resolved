@@ -3,11 +3,6 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Header from './Header.js';
 import RadioForm, {RadioButton, RadioButtonInput, RadioButtonLabel} from 'react-native-simple-radio-button';
 import { Link } from 'react-router-native';
-
-
-
-
-
 export default class MultipleChoice extends React.Component {
 
   constructor () {
